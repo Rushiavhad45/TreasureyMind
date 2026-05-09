@@ -44,7 +44,7 @@ A production-grade financial treasury management platform powered by a multi-age
 ### 1. Clone & Configure
 
 ```bash
-git clone <repo-url>
+git clone 
 cd treasurymind
 
 # Configure backend environment
