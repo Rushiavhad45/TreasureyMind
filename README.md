@@ -29,7 +29,8 @@ A production-grade financial treasury management platform powered by a multi-age
                Celery Beat     │   │  RiskAlertAgent │
                (Scheduler)     └───│  ApprovalAgent  │
                                    └────────┬────────┘
-                                            │ Gemini API
+                                            │
+                                      Gemini API
                                     Google Gemini Pro
 ```
 
@@ -384,17 +385,6 @@ python manage.py seed_data
 
 ---
 
-## 🔒 Security Notes
-
-- Change `SECRET_KEY` before deploying to production
-- Set `DEBUG=False` in production
-- Use environment variables for all secrets — never commit `.env`
-- JWT tokens expire in 60 minutes (configurable)
-- All financial amounts use `DecimalField` (no floating-point errors)
-- AuditLog records are append-only (no update/delete permissions)
-
----
-
 ## 📄 License
 
-MIT License — Built for educational and demonstration purposes.
+MIT License 
